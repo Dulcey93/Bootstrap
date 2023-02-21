@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        async></script>
 </head>
+
 <body>
     <!-- <div class="container-fluid">
         <div class="row d-flex row-cols-1 row-cols-sm-2 row-cols-lg-4">
@@ -28,8 +32,107 @@
             </div>
         </div>
     </div> -->
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section
+        class="container-fluid d-flex justify-content-center align-content-center flex-wrap border border-dark p-0">
+        <h1>CAMISETA ADODOES</h1>
+        <img src="./adodoes.png" alt="Camiseta Adodoes">
+    </section>
+    <section
+        class="container-fluid d-flex justify-content-center align-content-center flex-wrap border border-dark p-0">
+        <div class="container-fluid d-flex justify-content-start align-content-center flex-wrap border border-dark p-0 my-5 bg-info">
+            <h1>CAMISETA ADODOES BLANCA</h1>
+        </div>
+        <table class="table caption-top table table-bordered">
+            <!-- El caption está POR DENTRO de la tabla, pero es como si se creara un espacio extra para él arribita del header -->
+            <caption>Santiago Dulcey | Web Developer Full-Stack</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Development Skills</th>
+                    <th>Personal Skills</th>
+                    <th>Hobbies</th>
+                    <th>Motivation</th>
+                    <th>Goals</th>
+                    <th>Software Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Proficiency in HTML, CSS, and JavaScript</td>
+                    <td>Experience with version control</td>
+                    <td>Learning new technologies</td>
+                    <td>Create new and unique web apps</td>
+                    <td>Improve coding skills</td>
+                    <td>Git</td>
+                </tr>
+                <tr>
+                    <td>React, Angular, Vue.js</td>
+                    <td>Ability to work in a team</td>
+                    <td>Building personal projects</td>
+                    <td>Collaborating with others</td>
+                    <td>Contribute to open-source projects</td>
+                    <td>Figma</td>
+                </tr>
+                <tr>
+                    <td>Understanding of responsive design principles</td>
+                    <td>Problem-solving skills</td>
+                    <td>Engaging in physical activity</td>
+                    <td>Career advancement</td>
+                    <td>Build a professional network</td>
+                    <td>MySQL, Wamp, Firebase</td>
+                <tr>
+                    <td>Node.js, PHP, Python</td>
+                    <td>Familiarity with databases</td>
+                    <td>Play the Ukelele</td>
+                    <td>Good economic remuneration</td>
+                    <td>Work with an advanced development team</td>
+                    <td>Docker, iis server, ubuntu server</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">ESTE ES EL FOOTER DE MI TABLA</td>
+                    <td colspan="3">No hay más contenido para esta tabla</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
 
-    </header>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
