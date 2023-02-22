@@ -10,7 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
         async></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -58,85 +60,135 @@
             </div>
         </div>
     </nav>
-    <div class="row row-cols-1 row-cols-lg-2">
-        <div class="p-5 psm-5 order-lg-1 bg-primary text-center">
-            <h1>CAMISETA ADODOES</h1>
-            <img src="./adodoes.png" alt="Camiseta Adodoes">
-        </div>
-        <div class="p-5 psm-5 order-lg-2 bg-danger text-center">
-            <h2>CAMISETA ADODOES BLANCA</h2>    
-        <table class="table caption-top table table-bordered text-center">
-            <!-- El caption está POR DENTRO de la tabla, pero es como si se creara un espacio extra para él arribita del header -->
-            <caption>Santiago Dulcey | Web Developer Full-Stack</caption>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th>Development Skills</th>
-                    <th>Personal Skills</th>
-                    <th>Hobbies</th>
-                    <th>Motivation</th>
-                    <th>Goals</th>
-                    <th>Software Skills</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Proficiency in HTML, CSS, and JavaScript</td>
-                    <td>Experience with version control</td>
-                    <td>Learning new technologies</td>
-                    <td>Create new and unique web apps</td>
-                    <td>Improve coding skills</td>
-                    <td>Git</td>
-                </tr>
-                <tr>
-                    <td>React, Angular, Vue.js</td>
-                    <td>Ability to work in a team</td>
-                    <td>Building personal projects</td>
-                    <td>Collaborating with others</td>
-                    <td>Contribute to open-source projects</td>
-                    <td>Figma</td>
-                </tr>
-                <tr>
-                    <td>Understanding of responsive design principles</td>
-                    <td>Problem-solving skills</td>
-                    <td>Engaging in physical activity</td>
-                    <td>Career advancement</td>
-                    <td>Build a professional network</td>
-                    <td>MySQL, Wamp, Firebase</td>
-                <tr>
-                    <td>Node.js, PHP, Python</td>
-                    <td>Familiarity with databases</td>
-                    <td>Play the Ukelele</td>
-                    <td>Good economic remuneration</td>
-                    <td>Work with an advanced development team</td>
-                    <td>Docker, iis server, ubuntu server</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">ESTE ES EL FOOTER DE MI TABLA</td>
-                    <td colspan="3">No hay más contenido para esta tabla</td>
-                </tr>
-            </tfoot>
-        </table>
-        <div class="row row-cols-2 p-5 d-flex justify-content-center align-content-center">
-            <div class="d-flex justify-content-center gap-5">
-                <i class="fa-brands fa-facebook" style="font-size: 5em"></i>
-                <i class="fa-brands fa-facebook" style="font-size: 5em"></i>
-                <i class="fa-brands fa-facebook" style="font-size: 5em"></i>
+    <!-- Esta es la estructura de los cards -->
+    <!-- g-4 me indica el espacio entre las columnas que va a tener mi fila -->
+    <div class="row row-cols-1 row-cols-lg-2 g-4">
+        <!-- LEFT CARD WITH RESPONSIVE DESIGN -->
+        <!-- Si se utiliza la clase "col" por sí sola, Bootstrap automáticamente asigna el ancho de la columna en función del contenido que haya dentro de la columna y de las demás columnas en la misma fila. -->
+        <div class="col p-5">
+            <div class="card">
+                <!-- Cuando se utiliza la clase card-body, Bootstrap agrega un relleno interno a la tarjeta (padding) para separar el contenido de la tarjeta del borde exterior de la misma. Además, la clase card-body establece un alto automático para el contenedor de la tarjeta, lo que significa que se ajustará automáticamente a la cantidad de contenido que tenga. -->
+                <div class="card-body">
+                    <h3 class="card-tittle text-center ">CAMISETA ADODOES BLANCA</h3>
+                </div>
+                <img src="./adodoes.png" class="card-img-bottom" alt="Camiseta Adodoes">
             </div>
-        <button type="button" class="btn fs-1 bg-secondary">Comprar</button>
+        </div>
+        <!-- RIGHT CARD WITH RESPONSIVE DESIGN -->
+        <div class="col p-5">
+            <div class="card">
+                <div class="container">
+                    <!-- table-responsive hace que la tabla tenga el scroll cuando se haga pequeña la pantalla, y con table-striped le da las franjas intermedias -->
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped caption-top">
+                            <!-- El caption está POR DENTRO de la tabla, pero es como si se creara un espacio extra para él arribita del header -->
+                            <caption class="text-center">Santiago Dulcey | Web Developer Full-Stack</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>Development Skills</th>
+                                    <th>Personal Skills</th>
+                                    <th>Hobbies</th>
+                                    <th>Motivation</th>
+                                    <th>Goals</th>
+                                    <th>Software Skills</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Proficiency in HTML, CSS, and JavaScript</td>
+                                    <td>Experience with version control</td>
+                                    <td>Learning new technologies</td>
+                                    <td>Create new and unique web apps</td>
+                                    <td>Improve coding skills</td>
+                                    <td>Git</td>
+                                </tr>
+                                <tr>
+                                    <td>React, Angular, Vue.js</td>
+                                    <td>Ability to work in a team</td>
+                                    <td>Building personal projects</td>
+                                    <td>Collaborating with others</td>
+                                    <td>Contribute to open-source projects</td>
+                                    <td>Figma</td>
+                                </tr>
+                                <tr>
+                                    <td>Understanding of responsive design principles</td>
+                                    <td>Problem-solving skills</td>
+                                    <td>Engaging in physical activity</td>
+                                    <td>Career advancement</td>
+                                    <td>Build a professional network</td>
+                                    <td>MySQL, Wamp, Firebase</td>
+                                <tr>
+                                    <td>Node.js, PHP, Python</td>
+                                    <td>Familiarity with databases</td>
+                                    <td>Play the Ukelele</td>
+                                    <td>Good economic remuneration</td>
+                                    <td>Work with an advanced development team</td>
+                                    <td>Docker, iis server, ubuntu server</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3">ESTE ES EL FOOTER DE MI TABLA</td>
+                                    <td colspan="3">No hay más contenido para esta tabla</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row row-cols-2 p-3 d-flex justify-content-center align-content-center">
+                        <div class="d-flex justify-content-center gap-3">
+                            <i class="fa-brands fa-facebook" style="font-size: 3em"></i>
+                            <i class="fa-brands fa-facebook" style="font-size: 3em"></i>
+                            <i class="fa-brands fa-facebook" style="font-size: 3em"></i>
+                        </div>
+                        <button type="button" class="col-4 btn fs-4 bg-info">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
-
+    <footer class="bg-light text-white p-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="row">
+                    <div class="col p-2">
+                        <p class="small text-muted text-center mt-4 mb-0 text-white">© 2023 Campusland. All Rights Reserved. <a
+                                href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                    </div>
+                </div>
+                <div class="col p-2">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item me-4"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item me-4"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item me-4"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item me-4"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col p-2 text-center">
+                    <div class="container">
+                        <nav>
+                            <ul class="nav flex-column flex-md-row flex-nowrap">
+                                <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
